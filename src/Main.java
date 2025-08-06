@@ -1,3 +1,7 @@
+import java.util.*;
+
+import controllers.ProductoController;
+import model.Producto;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,6 +39,15 @@ public class Main {
                 new Producto("Ventilador USB", "030", Arrays.asList(8.0, 10.0, 8.0, 12.0, 10.0))
 
         );
+        Producto pro = new Producto(null, null, null);
+        pro.catidadPreciosRepetidos(lista);
+        pro.porcentajeCaracteresUnicos();
+
+        ProductoController proContr = new ProductoController();
+        proContr.ordenarProducto(null);
+        proContr.obtenerDestacados(null);
+        proContr.buscarPorNombre(null, null);
+        proContr.clasificarPorUnicidad(null);
 
     }
 }
